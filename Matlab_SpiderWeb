@@ -1,0 +1,12 @@
+%%This is a super simple Matlab code to represent a cute little spider in a web.
+%%Matlab can be used for these small purposes as well.
+
+spurs = 15;  rings = 25;
+ang = linspace(0,2*rings,spurs*rings+1);
+r = logspace(-1,1,rings*spurs+1);
+h=voronoi(cospi(ang).*r, sinpi(ang).*r);
+delete(h(1));
+text(0,0,'🕷','FontSize',40,'HorizontalAlignment','center');
+axis([-10 10 -10 10],'square')
+
+%%ND________SPIDERMAN IS MY FAVOURITE MARVEL SUPERHERO!!!!!!!!!!!!!!!!
